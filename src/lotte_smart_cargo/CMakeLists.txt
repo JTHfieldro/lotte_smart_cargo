@@ -43,6 +43,12 @@ catkin_package(
 
 include_directories(
     include # 헤더 파일 경로
+    include/communication # 통신 관련 헤더 파일 경로
+    include/define # 정의 관련 헤더 파일 경로
+    include/door
+    include/helper
+    include/io
+    include/smart_cargo
     ${catkin_INCLUDE_DIRS} # catkin 포함 디렉토리
     ${Boost_INCLUDE_DIRS} # Boost 포함 디렉토리
 )
