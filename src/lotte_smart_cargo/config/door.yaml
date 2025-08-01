@@ -1,0 +1,14 @@
+config_name: DOOR_MANAGER_CONFIG
+
+can:
+  send_id: 321 # 0x141
+
+thread:
+  hz: 10
+
+rmd:
+  rpm_ctrl_speed: 5
+  rpm_ctrl_position: 5
+  position_max: 7525   # door_open
+  position_min: -11212 # door_close
+  position_gap: 18737

@@ -1,0 +1,12 @@
+config_name: WAGO_CONFIG
+
+thread:
+  hz: 100
+
+modbus:
+  retry_count: 3
+  retry_turm: 2
+
+tcp:
+  ip: "192.168.10.202" # Drop AGV WAGO IP Address
+  port: 502

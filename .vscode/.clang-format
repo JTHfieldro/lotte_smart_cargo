@@ -1,0 +1,62 @@
+# 기본 Style
+BasedOnStyle: Google
+
+# 액세스 지정자 들여쓰기 간격
+AccessModifierOffset: -2
+
+# 대입 연산자 정렬
+AlignConsecutiveAssignments: true
+
+# 자료형 뒤 변수명 정렬
+AlignConsecutiveDeclarations: true
+
+# 매크로 정렬
+AlignConsecutiveMacros: true
+
+# 여는 중괄호 새줄에 작성
+BreakBeforeBraces: Allman
+# BreakBeforeBraces: Custom
+# BraceWrapping:
+#     AfterClass: true
+#     AfterFunction: true
+#     AfterCaseLabel: true
+#     AfterNamespace: true
+#     AfterControlStatement: true
+#     # SplitEmptyFunction: true
+#     # SplitEmptyRecord: true
+#     # SplitEmptyNamespace: true
+#     # SplitEmptyBlock: true
+
+# 들여쓰기 간격
+IndentWidth: 2
+
+# 포인터 연산자 위치
+PointerAlignment: Left
+
+# 참조 연산자 위치
+ReferenceAlignment: Left
+
+# 조건문에 항상 중괄호 삽입
+InsertBraces: false
+
+# 한 줄짜리 조건문 개행
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+
+# 한 줄짜리 switch문 개행
+AllowShortCaseLabelsOnASingleLine: true
+# AlignConsecutiveShortCaseStatements: AcrossEmptyLines
+
+# 함수 내 정의가 없을 경우에도 개행으로 작성
+AllowShortFunctionsOnASingleLine: All
+
+# 소괄호 전에 공백 삽입 여부
+SpaceBeforeParens: Never
+
+# switch문 case 들여쓰기
+IndentCaseLabels: true
+
+# 중괄호 초기화 목록 들여쓰기 간격 설정
+BracedInitializerIndentWidth: 2
+
+# 한 줄에 쓰여지는 최대 글자 수 (0은 제한없음)
+ColumnLimit: 0

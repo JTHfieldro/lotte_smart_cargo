@@ -1,0 +1,32 @@
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // 디버그 설정 이름 : VSCode에서 디버그 설정을 선택 할 때 표시되는 이름
+   
+      "name": "ROS: Launch",      
+
+      // 이 설정이 실행 요청임을 나타 냄 즉 디버그 모드에서 프로그램을 시작 할 때 사용
+      "request": "launch",        
+
+      // 실행 할 ros launch 경로 (package가 변경 되거나 할 때 변경 되어야 한다.)
+      "target": "${workspaceFolder}/src/lotte_smart_cargo/launch/lotte_smart_cargo.launch",
+
+      // 런치 파일을 실행 할 때 함께 실행 될 프로그램 목록
+      "launch": [
+        "rviz",       
+        "gz",
+        "gzclient",
+        "gzserver"
+      ],
+
+      // ros 디버깅 설정 유형을 지정. 이 경우 ros 유형임을 나타냄
+      "type": "ros",
+
+      // 디버그 세션을 시작하기 전에 실행 할 작업을 지정
+      // 이 경우 catkin_make 빌드 작업을 수행
+      "preLaunchTask": "catkin_make: build",        // catkin_make 빌드 작업을 수행
+    }
+  ]
+}
